@@ -52,9 +52,12 @@ class World {
     if(worldFlag === 1) {
     textSize(36);
         ///FIRST WORLD///
-    this.drawText("Welcome to an example of my syllabus", 90, 200);
+    this.drawText("Thank you for spending this time with me!", 90, 200);
     if(millis() > 5000) {
       this.drawText("You can use the arrow keys to move!", 100,600);
+    }
+    if(millis() > 15000) {
+      this.drawText("Move to the left to see more", 100,800);
     }
     if(player.x >= 760) {
       if ( 240 < player.y && player.y < 560) {
@@ -110,11 +113,11 @@ class World {
         ///FOURTH WORLD///
 
     this.drawText("I tinker with circuits, design with CAD,", 100, 200);
-    this.drawText("code with JS, and build with whatever.", 100, 240);
+    this.drawText("dabble with code, and love to build things", 100, 240);
     this.drawText("I've made desks, drones, games, and more.",70,280);
     this.drawText("I grew up in Virginia, USA and love to", 100, 460);
     this.drawText("travel, explore new cultures, histories", 100, 500);
-    this.drawText("and meet new people", 200, 540);
+    this.drawText("and meet new and wonderful people", 200, 540);
     if(player.x >= 760) {
       if ( 240 < player.y && player.y < 560) {
         world.choiceWorld();
@@ -161,11 +164,11 @@ class World {
     
     if(interest > 4) {
       this.drawText("Thank you for exploring!", 200, 280);
-      this.drawText("Here's a bit I've learned about you:", 120, 320);
+      this.drawText("Here's what I can learn about a student with this game:", 120, 320);
       if(interest > 7) {this.drawText("You're interested in each of my topics",80,460)};
       if(curious){this.drawText("You're more likely to bend rules for curiosity",80,500)};
       if(gamer){this.drawText("You play computer games",80,540)};
-      if(investigative){this.drawText("You're not just curious, but investigative",80,580)};
+      if(investigative){this.drawText("You're not just curious, but investigative!",80,580)};
       
     }
     
@@ -177,9 +180,9 @@ class World {
     this.drawText("what exactly they're interested in.", 120, 280);
     this.drawText("I then help build their cooperative,", 120, 360);
     this.drawText("critical thinking, and creative skills", 100, 400);
-    this.drawText("using projects before splitting the", 110, 440);    
-    this.drawText("class into sections based on their", 120, 480);
-    this.drawText("interests to personalize learning.", 120, 520);
+    this.drawText("using project based learning to cover", 110, 440);    
+    this.drawText("a path of UbD curriculum. This lets me", 120, 480);
+    this.drawText("base my content on students and standards", 120, 520);
     
       if(player.y >= 760) {
         if ( 240 < player.x && player.x < 560) {
@@ -207,7 +210,7 @@ class World {
         } else return;
       }
     }  else if (worldFlag === 7) {
-        ///Something WORLD///
+        ///DT WORLD///
     this.drawText("If allowed a more explorational course,", 110,160);
     this.drawText("I can use my CS and technology skills", 100, 200);
     this.drawText("to help students develop their ability", 110, 240);
@@ -230,7 +233,7 @@ class World {
     }
   }  else if (worldFlag === 72) {
     
-        ///Something WORLD 2///
+        ///DT WORLD 2///
     image(goGif,300,180, 200, 200);
     
     this.drawText("This allows students to learn and", 140, 440);    
@@ -246,13 +249,13 @@ class World {
     }  else if (worldFlag === 8) {
         ///Math WORLD///
     
-    this.drawText("Everybody loves math!", 230,160);
-    this.drawText("Some just don't know it yet", 200, 200);
+    this.drawText("Everybody loves math - ", 230,160);
+    this.drawText("some just don't know it yet!", 200, 200);
     this.drawText("This philosopohy drives my style to", 120, 240);
-    this.drawText("inspire student to find what they love.", 110, 280);
-    this.drawText("This ranges from the utility of math,", 100, 440);
-    this.drawText("its ability to quantify imagination,", 120, 480);    
-    this.drawText("and more as they develop their skills.", 100, 520);
+    this.drawText("inspire student with the fun puzzles", 110, 280);
+    this.drawText("that math offers us as well as growing", 100, 440);
+    this.drawText("their sense of confidence, curiosity,", 120, 480);    
+    this.drawText("and skill set simultaneously", 100, 520);
     
      if(player.x >= 760) {
         if ( 240 < player.y && player.y < 560) {
